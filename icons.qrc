@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/Icons">
-        <file alias="b_big">b-icon_318-1623.jpg</file>
-        <file alias="b_icon">b-icon_318-1623.ico</file>
+        <file alias="b_icon">b-icon.ico</file>
+        <file>b-icon.png</file>
     </qresource>
 </RCC>
