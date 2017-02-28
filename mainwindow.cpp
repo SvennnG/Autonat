@@ -244,11 +244,12 @@ void MainWindow::on_button_saveID_clicked()
 												QFileDialog::ShowDirsOnly
 												| QFileDialog::DontResolveSymlinks);
 
-	saveID(dir);
+    if (!dir.isEmpty())
+        saveID(dir);
 }
 
 void MainWindow::saveID(QString dir){
-	QString fname = dir + "\\" + ui->edit_IDname->text();
+    QString fname = dir + "\\" + ui->edit_IDname->text();
 	QFile file(fname);
 	if(file.open(QFile::WriteOnly)){
 		QTextStream out(&file);
